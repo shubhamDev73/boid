@@ -21,11 +21,10 @@ GameObject:
   - component: {fileID: 4488734710222782}
   - component: {fileID: 33171139040420472}
   - component: {fileID: 23442418456850318}
-  - component: {fileID: 65814621203371838}
   - component: {fileID: 114181284503899280}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -85,18 +84,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1468627413596856}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &65814621203371838
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1468627413596856}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &114181284503899280
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -109,5 +96,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
+  destination: {fileID: 0}
   minFlockDistance: 2
-  minControllerDistance: 5
+  speed: 0.1
