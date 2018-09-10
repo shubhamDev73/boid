@@ -6,22 +6,22 @@ public class EnemyController : MonoBehaviour {
 	public GameObject enemyPrefab;
 	public float randomPlace;
 	[@HideInInspector]
-	public GameObject[] enemies;
+	public Transform[] enemies;
 	public float speed;
 
 	public void CreateEnemies (int n) {
-		enemies = new GameObject[n];
+		enemies = new Transform[n];
 		for(int i = 0; i < n; i++){
 			GameObject enemy = Instantiate(enemyPrefab);
 			enemy.transform.position = transform.position + new Vector3(Random.value * randomPlace - randomPlace/2, 0, Random.value * randomPlace - randomPlace/2);
 			Enemy script = enemy.GetComponent<Enemy>();
 			script.controller = this;
-			enemies[i] = enemy;
+			enemies[i] = enemy.transform;
 		}
 	}
 
 	void Start () {
-		CreateEnemies(5);
+		CreateEnemies(15);
 	}
 
 	void Update () {

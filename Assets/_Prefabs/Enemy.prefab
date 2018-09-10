@@ -108,3 +108,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 529b0f9eb0fa50d4390584ef89acf939, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controller: {fileID: 0}
+  minFlockDistance: 2
+  minControllerDistance: 5
