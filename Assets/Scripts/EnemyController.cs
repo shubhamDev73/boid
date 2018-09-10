@@ -2,9 +2,12 @@
 
 public class EnemyController : MonoBehaviour {
 
+	[@HideInInspector]
 	public Transform player;
-	public GameObject enemyPrefab;
+	[@HideInInspector]
 	public float randomPlace;
+
+	public GameObject enemyPrefab;
 
 	public void CreateEnemies (int n) {
 		for(int i = 0; i < n; i++){

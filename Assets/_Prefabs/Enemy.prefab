@@ -97,5 +97,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
   destination: {fileID: 0}
-  minFlockDistance: 2
+  minDistance: 2
   speed: 0.1

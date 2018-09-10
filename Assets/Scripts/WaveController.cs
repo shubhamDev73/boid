@@ -6,8 +6,8 @@ public class WaveController : MonoBehaviour {
 	public GameObject enemyControllerPrefab;
 	public Transform[] spawnPoints;
 	public Transform player;
-	public float minDistanceBetweenFlocks;
-	public float maxDistanceBetweenFlocks;
+	public float minDistanceBetweenEnemies;
+	public float maxDistanceBetweenEnemies;
 
 	private EnemyController[] enemyControllers;
 
@@ -15,7 +15,7 @@ public class WaveController : MonoBehaviour {
 		for(int i = 0; i < spawnPoints.Length; i++){
 			EnemyController script = enemyControllers[i];
 			script.player = player;
-			script.randomPlace = Random.value * (maxDistanceBetweenFlocks - minDistanceBetweenFlocks) + minDistanceBetweenFlocks;
+			script.randomPlace = Random.value * (maxDistanceBetweenEnemies - minDistanceBetweenEnemies) + minDistanceBetweenEnemies;
 			script.CreateEnemies(enemies / spawnPoints.Length);
 		}
 	}

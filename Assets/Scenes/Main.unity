@@ -443,8 +443,8 @@ MonoBehaviour:
   - {fileID: 353004376}
   - {fileID: 192941403}
   player: {fileID: 47986035}
-  minDistanceBetweenFlocks: 10
-  maxDistanceBetweenFlocks: 50
+  minDistanceBetweenEnemies: 10
+  maxDistanceBetweenEnemies: 40
 --- !u!4 &1267147294
 Transform:
   m_ObjectHideFlags: 0
