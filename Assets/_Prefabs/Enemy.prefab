@@ -97,5 +97,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 0}
   destination: {fileID: 0}
-  minDistance: 2
+  minEnemyDistance: 4
+  minPlayerDistance: 25
   speed: 0.1

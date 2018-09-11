@@ -33,7 +33,7 @@ public class WaveController : MonoBehaviour {
 	IEnumerator Game () {
 		while(true){
 			CreateWave(20);
-			yield return new WaitForSeconds(5);
+			yield return new WaitForSeconds(10);
 		}
 	}
 
